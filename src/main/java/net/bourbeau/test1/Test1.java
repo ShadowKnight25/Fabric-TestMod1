@@ -1,5 +1,6 @@
 package net.bourbeau.test1;
 
+import net.bourbeau.test1.item.Moditems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,6 +13,8 @@ public class Test1 implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+		Moditems.registerModItems();
 
 		LOGGER.info("Hello Fabric world!");
 	}
